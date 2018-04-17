@@ -10,16 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var displayTitle: UILabel!
+    @IBOutlet weak var displayImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+    
+    @IBAction func baltimoreButton(_ sender: Any) {
+        displayTitle.text = "Baltimore"
+        displayImage.image = #imageLiteral(resourceName: "Baltimore")
     }
-
-
+    
+    @IBAction func nashvilleButton(_ sender: Any) {
+        displayTitle.text = "Nashville"
+        displayImage.image = #imageLiteral(resourceName: "Nashville")
+    }
+    
+    
+    @IBAction func newYorkButton(_ sender: Any) {
+        displayTitle.text = "New York"
+        displayImage.image = #imageLiteral(resourceName: "New York")
+        
+    }
 }
 
