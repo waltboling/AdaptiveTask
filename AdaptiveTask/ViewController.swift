@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         
     }
   
-    
     @IBAction func baltimoreButton(_ sender: Any) {
         displayTitle.text = "Baltimore"
         displayImage.image = #imageLiteral(resourceName: "Baltimore")
@@ -30,11 +29,10 @@ class ViewController: UIViewController {
         displayImage.image = #imageLiteral(resourceName: "Nashville")
     }
     
-    
     @IBAction func newYorkButton(_ sender: Any) {
         displayTitle.text = "New York"
         displayImage.image = #imageLiteral(resourceName: "New York")
-        
     }
+    
 }
 
